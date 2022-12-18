@@ -1,0 +1,9 @@
+#Connect to the K8s node:
+-> ssh docker@ip
+-> docker ps | grep nginx 
+-> docker exec -it 4e1569c6d81f sh //connecting to the container nginx.
+-> kubectl get pods -o wide //details about the pod.
+-> kubectl delete pod nginx //deletes the pod.
+-> alias k="kubectl" //we can use k instead off kubectl but this only works for GitBash terminal.
+-> k create deployment nginx-dep --image=nginx //create deployment.
+-> k scale deployment nginx-dep --replicas=5 //to scale deployments(pods). Increases the count.

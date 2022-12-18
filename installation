@@ -1,0 +1,11 @@
+#Open PowerShell as Administrator and run the following commands:
+-> Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
+-> minikube start --driver=hyperV
+-> minikube ip
+-> ssh docker@ip
+-> Enter password as tcuser
+
+1#Make sure that the local system has sufficient space and RAM for the process.
+
+#Enable Hyper-V in the local system as this is going to be the VM
+https://www.makeuseof.com/install-hyper-v-windows-11-home/
